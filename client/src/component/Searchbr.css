@@ -1,0 +1,29 @@
+.search-container {
+  width: 50%;
+  margin: auto;
+}
+img {
+  width: 2rem;
+  height: 2rem;
+}
+@media (max-width: 1400px) {
+  .search-container {
+    width: 60%; /* Adjust the width as needed */
+  }
+}
+@media (max-width: 1000px) {
+  .search-container {
+    width: 70%; /* Adjust the width as needed */
+  }
+}
+
+@media (max-width: 700px) {
+  .search-container {
+    width: 80%; /* Adjust the width as needed */
+  }
+}
+@media (max-width: 500px) {
+  .search-container {
+    width: 90%; /* Adjust the width as needed */
+  }
+}
