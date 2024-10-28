@@ -1,0 +1,16 @@
+.navbar {
+  width: 100vw; /* Full viewport width */
+  padding: 0; /* Remove default padding */
+  margin: 0 auto; /* Center content if needed */
+}
+.logo {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 35%;
+  margin-right: 0.5rem;
+}
+.profile-img {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+}

@@ -2,7 +2,7 @@ import "./Navbr.css";
 function Navbr() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg bg-body-secondary">
         <div className="container-fluid">
           <button
             className="navbar-toggler"
@@ -15,14 +15,12 @@ function Navbr() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <img
-            src="./src/assets/logo.jpg"
-            alt="Logo"
-            width="27"
-            height="27"
-            className="d-inline-block align-text-top mx-3"
-          ></img>
           <a className="navbar-brand" href="#">
+            <img
+              src="./src/assets/logo.jpg"
+              alt="Logo"
+              className="logo d-inline-block align-text-top"
+            />
             CY HOMES
           </a>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
@@ -48,17 +46,13 @@ function Navbr() {
                 </a>
               </li>
             </ul>
-            <form className="d-flex" role="search">
-              <input
-                className="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button className="btn btn-outline-primary" type="submit">
-                Search
-              </button>
-            </form>
+          </div>
+          <div className="profile">
+            <img
+              className="profile-img"
+              src="./src/assets/profile-user.png"
+              alt="profile-photo"
+            />
           </div>
         </div>
       </nav>
