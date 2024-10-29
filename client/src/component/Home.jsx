@@ -1,13 +1,13 @@
-import HomeCard from "./Homecard.jsx";
-function Navbr() {
+import Containercard from "./Containercard.jsx";
+function Home() {
   return (
     <>
-      <div className="d-flex flex-wrap justify-content-center gap-4 my-4">
-        <HomeCard />
-        <HomeCard />
-      </div>{" "}
+      <Containercard title="Recent"></Containercard>
+      <br />
+      <Containercard title="Recommendation"></Containercard>
+      <br />
     </>
   );
 }
 
-export default Navbr;
+export default Home;
