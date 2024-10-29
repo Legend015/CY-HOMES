@@ -1,4 +1,6 @@
+import React from "react";
 import "./Navbr.css";
+import { Link } from "react-router-dom";
 function Navbr() {
   return (
     <>
@@ -15,35 +17,35 @@ function Navbr() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <a className="navbar-brand" href="#">
+          <Link className="navbar-brand" to="/">
             <img
               src="./src/assets/logo.jpg"
               alt="Logo"
               className="logo d-inline-block align-text-top"
             />
             CY HOMES
-          </a>
+          </Link>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 mx-4">
               <li className="nav-item mx-3">
-                <a className="nav-link active" aria-current="page" href="#">
+                <Link className="nav-link active" aria-current="page" to="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item mx-3">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/Chats">
                   Chats
-                </a>
+                </Link>
               </li>
               <li className="nav-item mx-3">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/Roomie">
                   Roomie
-                </a>
+                </Link>
               </li>
               <li className="nav-item mx-3">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/About">
                   About
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
