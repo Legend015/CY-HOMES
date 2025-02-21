@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbr.css";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
+
 function Navbr() {
   return (
     <>
@@ -50,11 +51,14 @@ function Navbr() {
             </ul>
           </div>
           <div className="profile">
-            <img
-              className="profile-img"
-              src="./src/assets/profile-user.png"
-              alt="profile-photo"
-            />
+            {/* Wrap the profile image with a Link to redirect to the Register page */}
+            <Link to="/login">
+              <img
+                className="profile-img"
+                src="./src/assets/profile-user.png"
+                alt="profile-photo"
+              />
+            </Link>
           </div>
         </div>
       </nav>

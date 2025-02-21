@@ -1,0 +1,66 @@
+
+a {
+  text-decoration: none !important; /* Removes underline */
+  color: inherit !important; /* Inherits text color from parent */
+}
+    .footer {
+      background-color: #2E7D32 !important; /* Ensures green background */
+      color: #ffffff !important; /* Ensures white text */
+      padding: 1rem;
+      text-align: center;
+      
+        position: relative;
+        
+        padding: 2rem;
+        
+        overflow: hidden;
+    }
+    
+    .bubble {
+        position: absolute;
+        bottom: -50px;
+        width: 20px;
+        height: 20px;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        animation: floatUp 5s infinite ease-in-out;
+        opacity: 0.7;
+        z-index: 2; /* Ensures it floats above other elements */
+        pointer-events: none; /* Prevents interference with clicks */
+        mix-blend-mode: screen; /* Creates a glowing effect over text */
+    }
+    
+    @keyframes floatUp {
+        0% {
+            transform: translateY(0);
+            opacity: 0.7;
+        }
+        50% {
+            transform: translateY(-200px);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-400px);
+            opacity: 0;
+        }
+    }
+    
+  
+  
+  
+  .content{
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+
+  }
+  .social-icons{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 10px; 
+    font-size: 24px; /* Adjust the size as needed */
+   
+  }
+  
+ 
