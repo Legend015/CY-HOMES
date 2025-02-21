@@ -7,6 +7,10 @@ import Home from "./Home.jsx";
 import Chats from "./Chats.jsx";
 import Roomie from "./Roomie.jsx";
 import About from "./About.jsx";
+import Login from "./login.jsx";
+import Register from "./register.jsx";  // Import Register component
+import Footer from "./Footer.jsx";
+
 function App() {
   return (
     <Router>
@@ -18,8 +22,12 @@ function App() {
           <Route path="/Chats" element={<Chats />} />
           <Route path="/Roomie" element={<Roomie />} />
           <Route path="/About" element={<About />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/Register" element={<Register />} /> {/* Add Register route */}
+          
         </Routes>
       </div>
+      <Footer/>
     </Router>
   );
 }
