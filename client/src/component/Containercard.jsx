@@ -7,7 +7,7 @@ export default function MyComponent(props) {
 
   return (
     <div>
-      <strong>{props.title}</strong>
+      <strong className="text-black">{props.title}</strong> {/* Ensure black text */}
       <hr />
       <div className="d-flex flex-wrap justify-content-center gap-4 my-4">
         {array.map((item, index) => (
@@ -17,3 +17,4 @@ export default function MyComponent(props) {
     </div>
   );
 }
+

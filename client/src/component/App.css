@@ -1,0 +1,25 @@
+.app-container {
+    height: 100vh; /* Ensures it fills the screen */
+    width: 100vw;
+ 
+  }
+  .main-content {
+    flex: 1;
+    display: flex;
+    color:black !important;
+    background-color: #F5F5DC;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+  }
+  
+  .footer {
+    width: 100%;
+    position: absolute; /* Change to fixed if you want it always visible */
+    bottom: 0;
+    background-color: #2E7D32;
+    color: white;
+    text-align: center;
+    padding: 15px,0px;
+  }
+ 

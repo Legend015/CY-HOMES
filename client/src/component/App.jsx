@@ -11,23 +11,49 @@ import Login from "./login.jsx";
 import Register from "./register.jsx";  // Import Register component
 import Footer from "./Footer.jsx";
 
-function App() {
+/* function App() {
   return (
     <Router>
       <Navbr />
+      
       <Searchbr />
-      <div className="container mt-4">
+      
+      <div className="container">
+      
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Chats" element={<Chats />} />
           <Route path="/Roomie" element={<Roomie />} />
           <Route path="/About" element={<About />} />
           <Route path="/Login" element={<Login />} />
-          <Route path="/Register" element={<Register />} /> {/* Add Register route */}
+          <Route path="/Register" element={<Register />} /> 
           
         </Routes>
       </div>
       <Footer/>
+    </Router>
+  );
+}
+
+export default App; */
+function App() {
+  return (
+    <Router>
+    <div className="app-container">
+      <Navbr />
+      <Searchbr />
+      <div className="main-content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Chats" element={<Chats />} />
+          <Route path="/Roomie" element={<Roomie />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/Register" element={<Register />} />
+        </Routes>
+      </div>
+      <Footer /> {/* Footer stays at the bottom */}
+    </div>
     </Router>
   );
 }

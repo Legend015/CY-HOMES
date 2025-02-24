@@ -4,17 +4,15 @@ a {
   color: inherit !important; /* Inherits text color from parent */
 }
     .footer {
-      background-color: #2E7D32 !important; /* Ensures green background */
+      background-color: #3E2723 !important; /* Ensures green background */
       color: #ffffff !important; /* Ensures white text */
-      padding: 1rem;
+     overflow-inline: hidden;
       text-align: center;
       
         position: relative;
+        z-index: 1;
         
-        padding: 2rem;
-        
-        overflow: hidden;
-    }
+ }
     
     .bubble {
         position: absolute;
