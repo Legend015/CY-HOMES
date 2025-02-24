@@ -1,12 +1,18 @@
 import Containercard from "./Containercard.jsx";
+
 function Home() {
   return (
-    <>
-      <Containercard title="Recent"></Containercard>
-      <br />
-      <Containercard title="Recommendation"></Containercard>
-      <br />
-    </>
+    <div className="home-container">
+      
+
+      {/* Content Overlay */}
+      <div className="content">
+        <Containercard title="Recent" />
+        <br />
+        <Containercard title="Recommendation" />
+        <br />
+      </div>
+    </div>
   );
 }
 

@@ -1,29 +1,73 @@
+/* Wrapper for search bar and video */
+.search-wrapper {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Background Video only behind search bar */
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Push video behind the search bar */
+}
+
+/* Search Container */
 .search-container {
-  width: 50%;
-  margin: auto;
+  position: relative;
+  width: 30%;
+  padding: 10px; /* Add padding for readability */
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+  backdrop-filter: blur(5px); /* Optional: Adds a blur effect for readability */
+  border-radius: 10px; /* Rounded corners */
+  z-index: 2; /* Ensures it appears above the video */
 }
-img {
-  width: 2rem;
-  height: 2rem;
-}
+
+
+/* Responsive Design */
 @media (max-width: 1400px) {
   .search-container {
-    width: 60%; /* Adjust the width as needed */
+    width: 60%;
   }
 }
 @media (max-width: 1000px) {
   .search-container {
-    width: 70%; /* Adjust the width as needed */
+    width: 70%;
   }
 }
-
 @media (max-width: 700px) {
   .search-container {
-    width: 80%; /* Adjust the width as needed */
+    width: 80%;
   }
 }
 @media (max-width: 500px) {
   .search-container {
-    width: 90%; /* Adjust the width as needed */
+    width: 90%;
   }
+}
+.search-container {
+  color: black !important; /* Forces all text to be black */
+}
+
+.search-container input,
+.search-container button,
+.search-container .dropdown-toggle,
+.search-container .dropdown-menu,
+.search-container .dropdown-item {
+  color: black !important; /* Ensures text remains black */
+}
+
+.search-container .dropdown-menu {
+  background-color: white !important; /* Keeps dropdown readable */
+}
+
+.search-container .dropdown-item:hover {
+  background-color: #ddd !important; /* Light gray hover effect */
 }
